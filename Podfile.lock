@@ -1,0 +1,55 @@
+PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/Core
+    - ASIHTTPRequest/S3
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - JSONKit-NoWarning (1.1)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - MBProgressHUD (0.8)
+  - MZAppearance (1.1.1)
+  - MZFormSheetController (2.3.2):
+    - MZAppearance (~> 1.1.1)
+  - NYXImagesKit (2.3)
+  - OpenUDID (1.0.0)
+  - Reachability (3.1.1)
+  - SDWebImage (3.5.4):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5.4)
+  - TWMessageBarManager (1.3.2)
+
+DEPENDENCIES:
+  - ASIHTTPRequest (~> 1.8.2)
+  - JSONKit-NoWarning (~> 1.1)
+  - MagicalRecord (~> 2.2)
+  - MBProgressHUD (~> 0.8)
+  - MZFormSheetController (~> 2.3.2)
+  - NYXImagesKit (~> 2.3)
+  - OpenUDID (~> 1.0.0)
+  - SDWebImage (~> 3.5.4)
+  - TWMessageBarManager (~> 1.3.2)
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: 4bd3ed65bf8a726292c5fa79ea5c0a2e02c97241
+  JSONKit-NoWarning: 5b8c7dbf2969926b714727288bb2a9d24a176a0c
+  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MZAppearance: 8b02683f0019f725557ae9839ed6cab153fff669
+  MZFormSheetController: 17c5e96a51e0c658dfe8cc032a7ed2c624113639
+  NYXImagesKit: bdcd82ed61e55ad95a2e95675c2f6b84f039c423
+  OpenUDID: 13ab988776ef38dca1e2e799e961448cf83a8111
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  SDWebImage: 1a62010700adbba823b621fc217906739dbf6aa5
+  TWMessageBarManager: e14110324f2b2e821ba0880805a0655cbdb76e82
+
+COCOAPODS: 0.29.0

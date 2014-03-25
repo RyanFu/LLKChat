@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLKAddUserViewController">
+            <connections>
+                <outlet property="userIDTextField" destination="JCJ-eR-324" id="pxK-OU-1kp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" tag="998" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="108"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JCJ-eR-324">
+                    <rect key="frame" x="20" y="20" width="160" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="dgP-Zw-ZpA"/>
+                        <constraint firstAttribute="height" constant="30" id="rUa-hP-Wam"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHg-JI-2Rc">
+                    <rect key="frame" x="60" y="58" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Szf-bj-kgc"/>
+                        <constraint firstAttribute="width" constant="80" id="YMW-QZ-bzH"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmButtonClick:" destination="-1" eventType="touchUpInside" id="KcR-5X-YdM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JCJ-eR-324" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="CR2-cU-EVI"/>
+                <constraint firstItem="RHg-JI-2Rc" firstAttribute="top" secondItem="JCJ-eR-324" secondAttribute="bottom" constant="8" id="F2P-vq-BDt"/>
+                <constraint firstAttribute="centerX" secondItem="RHg-JI-2Rc" secondAttribute="centerX" id="M5u-rc-eQz"/>
+                <constraint firstItem="JCJ-eR-324" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="bZw-dm-U5p"/>
+                <constraint firstAttribute="trailing" secondItem="JCJ-eR-324" secondAttribute="trailing" constant="20" id="bhP-H3-6bB"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

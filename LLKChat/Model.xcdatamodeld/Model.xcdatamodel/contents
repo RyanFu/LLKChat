@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LLKMessage" representedClassName="LLKMessage" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fromMe" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sync" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LLKUser" inverseName="messages" inverseEntity="LLKUser" syncable="YES"/>
+    </entity>
+    <entity name="LLKRecord" representedClassName="LLKRecord" syncable="YES">
+        <relationship name="lastMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LLKMessage" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LLKUser" syncable="YES"/>
+    </entity>
+    <entity name="LLKUser" representedClassName="LLKUser" syncable="YES">
+        <attribute name="iconURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LLKMessage" inverseName="user" inverseEntity="LLKMessage" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LLKMessage" positionX="-155" positionY="9" width="128" height="133"/>
+        <element name="LLKUser" positionX="151" positionY="8" width="128" height="103"/>
+        <element name="LLKRecord" positionX="-9" positionY="-106" width="128" height="73"/>
+    </elements>
+</model>
